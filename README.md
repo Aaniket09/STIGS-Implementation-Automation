@@ -67,13 +67,13 @@ The following STIGs were identified as critical failures and selected for automa
 
 | STIG ID | Title | Severity | Security Context & Justification |
 | :--- | :--- | :--- | :--- |
-| **WN11-CC-000038** | WDigest Authentication must be disabled | High | Prevents plaintext credentials from being stored in LSASS, directly mitigating credential dumping risks (e.g., Mimikatz). |
-| **WN11-CC-000326** | PowerShell Script Block Logging must be enabled | High | Provides visibility into malicious PowerShell activity; essential for detecting "living-off-the-land" techniques. |
-| **WN11-CC-000327** | PowerShell Transcription must be enabled | High | Creates full transcripts of PowerShell sessions, enhancing forensic capabilities during incident response. |
-| **WN11-CC-000345** | WinRM service must not use Basic authentication | High | Prevents credential theft by disallowing weak, unencrypted authentication mechanisms used in lateral movement. |
-| **WN11-CC-000350** | WinRM service must not allow unencrypted traffic | High | Blocks attackers from intercepting or tampering with WinRM remote management sessions. |
-| **WN11-SO-000120** | SMB server must always perform SMB packet signing | High | Prevents relay attacks and tampering with SMB traffic. |
-| **WN11-SO-000100** | SMB client must always perform SMB packet signing | High | Hardens both sides of SMB communication, reducing spoofing and MITM attack risks. |
-| **WN11-CC-000270** | RDP client must not save passwords | Medium | Stops attackers from harvesting stored RDP credentials after breaching a machine. |
-| **WN11-CC-000280** | RDP must always prompt for password | Medium | Ensures credentials must always be entered manually, preventing auto-use by malware. |
-| **WN11-CC-000310** | Users must be prevented from changing installation options | Medium | Blocks users/malware from modifying installation settings to bypass security controls. |
+| [**WN11-CC-000038**](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000038/WN11-CC-000038-readme.md) | WDigest Authentication must be disabled | High | Prevents plaintext credentials from being stored in LSASS, directly mitigating credential dumping risks (e.g., Mimikatz). |
+| [**WN11-CC-000326**]() | PowerShell Script Block Logging must be enabled | High | Provides visibility into malicious PowerShell activity; essential for detecting "living-off-the-land" techniques. |
+| [**WN11-CC-000327**]() | PowerShell Transcription must be enabled | High | Creates full transcripts of PowerShell sessions, enhancing forensic capabilities during incident response. |
+| [**WN11-CC-000345**]() | WinRM service must not use Basic authentication | High | Prevents credential theft by disallowing weak, unencrypted authentication mechanisms used in lateral movement. |
+| [**WN11-CC-000350**]() | WinRM service must not allow unencrypted traffic | High | Blocks attackers from intercepting or tampering with WinRM remote management sessions. |
+| [**WN11-SO-000120**]() | SMB server must always perform SMB packet signing | High | Prevents relay attacks and tampering with SMB traffic. |
+| [**WN11-SO-000100**]() | SMB client must always perform SMB packet signing | High | Hardens both sides of SMB communication, reducing spoofing and MITM attack risks. |
+| [**WN11-CC-000270**]() | RDP client must not save passwords | Medium | Stops attackers from harvesting stored RDP credentials after breaching a machine. |
+| [**WN11-CC-000280**]() | RDP must always prompt for password | Medium | Ensures credentials must always be entered manually, preventing auto-use by malware. |
+| [**WN11-CC-000310**]() | Users must be prevented from changing installation options | Medium | Blocks users/malware from modifying installation settings to bypass security controls. |
