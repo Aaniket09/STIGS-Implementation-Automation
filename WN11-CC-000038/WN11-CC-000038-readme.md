@@ -16,10 +16,14 @@ To remediate this vulnerability, the automation script targets the Windows Regis
 2.  **Value Enforcement:** It checks for the registry value `UseLogonCredential`.
 3.  **Modification:** The script sets this DWORD value to `0`. This explicitly tells Windows not to store credentials in memory for WDigest, effectively neutralizing the vector for memory scraping attacks.
 
-[Link to Remediation Script](PLACEHOLDER_LINK_HERE)
+[Link to Remediation Script](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000038/remediate-WN11-CC-000038.ps1)
 
 ---
 
 ## 📊 Rescan Verification Report
 
-![Rescan Result - WN11-CC-000038](PLACEHOLDER_IMAGE_LINK_HERE)
+<img width="1624" height="413" alt="Screenshot 2025-11-24 141237" src="https://github.com/user-attachments/assets/0e4486e5-6caf-4e86-ad2e-ed02ee0bf6fd" />
+
+<img width="2076" height="805" alt="Screenshot 2025-11-24 142850" src="https://github.com/user-attachments/assets/f8005d54-d218-412a-ab5f-e22a313c0965" />
+
+---
