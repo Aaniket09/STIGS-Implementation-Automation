@@ -69,7 +69,7 @@ The following STIGs were identified as critical failures and selected for automa
 | :--- | :--- | :--- | :--- |
 | [**WN11-CC-000038**](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000038/WN11-CC-000038-readme.md) | WDigest Authentication must be disabled | High | Prevents plaintext credentials from being stored in LSASS, directly mitigating credential dumping risks (e.g., Mimikatz). |
 | [**WN11-CC-000326**](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000326/WN11-CC-000326-readme.md) | PowerShell Script Block Logging must be enabled | High | Provides visibility into malicious PowerShell activity; essential for detecting "living-off-the-land" techniques. |
-| [**WN11-CC-000327**]() | PowerShell Transcription must be enabled | High | Creates full transcripts of PowerShell sessions, enhancing forensic capabilities during incident response. |
+| [**WN11-CC-000327**](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000327/WN11-CC-000327-readme.md) | PowerShell Transcription must be enabled | High | Creates full transcripts of PowerShell sessions, enhancing forensic capabilities during incident response. |
 | [**WN11-CC-000345**]() | WinRM service must not use Basic authentication | High | Prevents credential theft by disallowing weak, unencrypted authentication mechanisms used in lateral movement. |
 | [**WN11-CC-000350**]() | WinRM service must not allow unencrypted traffic | High | Blocks attackers from intercepting or tampering with WinRM remote management sessions. |
 | [**WN11-SO-000120**]() | SMB server must always perform SMB packet signing | High | Prevents relay attacks and tampering with SMB traffic. |
