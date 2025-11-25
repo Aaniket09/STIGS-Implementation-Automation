@@ -16,10 +16,14 @@ The automation script modifies the Registry to turn on system-wide transcription
 2.  **Activation:** It sets the `EnableTranscription` DWORD value to `1`.
 3.  **Output Definition (Optional but Recommended):** The script may also configure the `OutputDirectory` string to ensure logs are saved to a hardened, monitored directory rather than the user's default documents folder.
 
-[Link to Remediation Script](PLACEHOLDER_LINK_HERE)
+[Link to Remediation Script](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000327/remediate-WN11-CC-000327.ps1)
 
 ---
 
 ## 📊 Rescan Verification Report
 
-![Rescan Result - WN11-CC-000327](PLACEHOLDER_IMAGE_LINK_HERE)
+<img width="1767" height="473" alt="Screenshot 2025-11-25 091809" src="https://github.com/user-attachments/assets/878da502-c112-48c2-a4de-1106ae7adae3" />
+
+<img width="2097" height="868" alt="Screenshot 2025-11-25 092727" src="https://github.com/user-attachments/assets/9d7acfcb-6d63-4433-83f4-d20c382551c2" />
+
+---
