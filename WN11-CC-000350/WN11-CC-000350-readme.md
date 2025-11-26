@@ -10,11 +10,11 @@ Allowing unencrypted traffic on the WinRM service exposes administrative command
 ## ⚙️ Remediation Strategy
 
 **PowerShell Implementation Logic:**
-This remediation utilizes the WSMan provider to harden the transport layer of remote management.
+This remediation utilizes the Group Policy Registry path to enforce the encryption requirement strictly at the policy level.
 
-1.  **WSMan Configuration:** The script targets the service configuration at `WSMan:\localhost\Service`.
-2.  **Attribute Modification:** It locates the `AllowUnencrypted` attribute.
-3.  **Enforcement:** The script sets this value to `$false`. This ensures that the service rejects any connection attempts that do not utilize transport layer encryption (HTTPS).
+1.  **Registry Targeting:** The script targets the policy key: `HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service`.
+2.  **Value Configuration:** It identifies or creates the DWORD value named `AllowUnencryptedTraffic`.
+3.  **Enforcement:** The script sets this value to `0`. This explicitly configures the Windows Remote Management service to reject any connection attempts that do not utilize transport layer encryption (HTTPS).
 
 [Link to Remediation Script](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000350/remediate-WN11-CC-000350.ps1)
 
@@ -27,3 +27,4 @@ This remediation utilizes the WSMan provider to harden the transport layer of re
 <img width="2095" height="835" alt="Screenshot 2025-11-26 105950" src="https://github.com/user-attachments/assets/7936b2d9-0316-4d43-bc5e-ae6af0bc93d0" />
 
 ---
+
