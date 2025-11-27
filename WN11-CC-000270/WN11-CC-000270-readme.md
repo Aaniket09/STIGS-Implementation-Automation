@@ -16,10 +16,14 @@ The script applies a Group Policy restriction via the Registry to disable the "S
 2.  **Policy Application:** It targets the value `DisablePasswordSaving`.
 3.  **Modification:** The script sets this DWORD to `1`. This greys out the option to save passwords in the RDP client UI and prevents the underlying functionality.
 
-[Link to Remediation Script](PLACEHOLDER_LINK_HERE)
+[Link to Remediation Script](https://github.com/Aaniket09/STIGS-Implementation-Automation/blob/main/WN11-CC-000270/remediate-WN11-CC-000270.ps1)
 
 ---
 
 ## 📊 Rescan Verification Report
 
-![Rescan Result - WN11-CC-000270](PLACEHOLDER_IMAGE_LINK_HERE)
+<img width="1420" height="432" alt="Screenshot 2025-11-27 112627" src="https://github.com/user-attachments/assets/70788ce5-2eed-4a2e-982c-514070036b35" />
+
+<img width="2108" height="876" alt="Screenshot 2025-11-27 113535" src="https://github.com/user-attachments/assets/a0ea2fb0-908b-4d01-aa5a-bb619b73eed4" />
+
+---
